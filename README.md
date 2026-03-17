@@ -5,6 +5,9 @@
 A full-stack web application that integrates GitHub OAuth to allow users to explore repositories, branches, pull
 requests, and issues in an interactive dashboard.
 
+## Demo
+Link: https://www.awesomescreenshot.com/video/50508116?key=74505613dc3c95b8da8cd0d70ae27436
+
 ## Features
 
 - **GitHub OAuth Login** - Users can log in using GitHub authentication.
