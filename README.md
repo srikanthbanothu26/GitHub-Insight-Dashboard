@@ -40,12 +40,12 @@ GitHub Branch Explorer is a web application that allows users to authenticate wi
 
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/srikanthbanothu26/github-branch.git
-cd github-branch
+git clone https://github.com/srikanthbanothu26/GitHub-Insight-Dashboard.git 
 ```
 
 ### **2️⃣ Backend Setup**
 ```sh
+cd GitHub-Insight-Dashboard
 cd backend
 npm install
 ```
@@ -54,7 +54,7 @@ Create a `.env` file in the backend directory and add:
 GITHUB_CLIENT_ID=your_github_client_id
 GITHUB_CLIENT_SECRET=your_github_client_secret
 SESSION_SECRET=random_secret
-CALLBACK_URL=http://localhost:5000/auth/github/callback
+CALLBACK_URL=http://localhost:5004/auth/github/callback
 FRONTEND_URL=http://localhost:5173
 ```
 Run the backend:
