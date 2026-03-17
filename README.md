@@ -1,9 +1,12 @@
-# GitHub Branch Explorer
+# GitHub Insight Dashboard
 
 ## Project Overview
-GitHub Branch Explorer is a web application that allows users to authenticate with GitHub and explore their repositories, branches, pull requests, and issues in a structured UI.
+
+A full-stack web application that integrates GitHub OAuth to allow users to explore repositories, branches, pull
+requests, and issues in an interactive dashboard.
 
 ## Features
+
 - **GitHub OAuth Login** - Users can log in using GitHub authentication.
 - **Repository Selection** - Displays all repositories of the authenticated user.
 - **Branches View** - Lists all branches for the selected repository.
@@ -13,12 +16,14 @@ GitHub Branch Explorer is a web application that allows users to authenticate wi
 - **Collapsible Sections** - PRs and Issues can be expanded or collapsed.
 
 ## Tech Stack
+
 - **Frontend**: React, Context API, Axios
 - **Backend**: Node.js, Express, Passport.js
 - **Authentication**: GitHub OAuth (via Passport.js)
 - **API**: GitHub REST API
 
-##  Project Structure
+## Project Structure
+
 ```
 📁 github-branch-explorer
  ├── 📁 frontend (React App)
@@ -39,17 +44,21 @@ GitHub Branch Explorer is a web application that allows users to authenticate wi
 ## ️ Setup Instructions
 
 ### **1️⃣ Clone the Repository**
+
 ```sh
 git clone https://github.com/srikanthbanothu26/GitHub-Insight-Dashboard.git 
 ```
 
 ### **2️⃣ Backend Setup**
+
 ```sh
 cd GitHub-Insight-Dashboard
 cd backend
 npm install
 ```
+
 Create a `.env` file in the backend directory and add:
+
 ```
 GITHUB_CLIENT_ID=your_github_client_id
 GITHUB_CLIENT_SECRET=your_github_client_secret
@@ -57,12 +66,15 @@ SESSION_SECRET=random_secret
 CALLBACK_URL=http://localhost:5004/auth/github/callback
 FRONTEND_URL=http://localhost:5173
 ```
+
 Run the backend:
+
 ```sh
 node server.js
 ```
 
 ### **3️⃣ Frontend Setup**
+
 ```sh
 cd frontend
 npm install
@@ -70,12 +82,14 @@ npm run dev
 ```
 
 ### **4️⃣ Open the App**
+
 Visit: [http://localhost:5173](http://localhost:5173) in your browser.
 
-## 📸 Screenshots 
+## 📸 Screenshots
 
 ### github Oauth Application
-**1.GO TO GITHUB/ SETTINGS / DEVELOPER SETTINGS/ OAUTH APPS** 
+
+**1.GO TO GITHUB/ SETTINGS / DEVELOPER SETTINGS/ OAUTH APPS**
 
 ![img_1.png](static/src/img/img_1.png)
 
@@ -90,8 +104,7 @@ Visit: [http://localhost:5173](http://localhost:5173) in your browser.
 ![img_5.png](static/src/img/img_5.png)
 ![img_6.png](static/src/img/img_6.png)
 
+## License
 
-
-##  License
 This project is open-source and available for anyone to use.
 
