@@ -6,7 +6,7 @@ const session = require("express-session");
 const GitHubStrategy = require("passport-github2").Strategy;
 
 const app = express();
-const PORT = 5000;
+const PORT = 5004;
 
 
 app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));

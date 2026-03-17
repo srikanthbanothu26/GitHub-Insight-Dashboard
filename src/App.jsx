@@ -40,7 +40,7 @@ const App = () => {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
           <h1 style={{ color: "#3498db" }}>GitHub Branch Explorer</h1>
           {user && (
-            <a href="http://localhost:5000/auth/logout">
+            <a href="http://localhost:5004/auth/logout">
               <button style={{ padding: "10px", background: "#e74c3c", color: "white", border: "none", borderRadius: "5px", cursor: "pointer" }}>Logout</button>
             </a>
           )}
@@ -95,7 +95,7 @@ const App = () => {
             )}
           </div>
         ) : (
-          <a href="http://localhost:5000/auth/github">
+          <a href="http://localhost:5004/auth/github">
             <button style={{ padding: "12px", background: "#3498db", color: "white", border: "none", borderRadius: "5px", cursor: "pointer", fontSize: "16px" }}>Login with GitHub</button>
           </a>
         )}

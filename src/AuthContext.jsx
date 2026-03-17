@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
   const [issues, setIssues] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/auth/user", { withCredentials: true })
+    axios.get("http://localhost:5004/auth/user", { withCredentials: true })
       .then((response) => {
         setUser(response.data.user || null);
       })
@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     if (user) {
-      axios.get("http://localhost:5000/api/repositories", { withCredentials: true })
+      axios.get("http://localhost:5004/api/repositories", { withCredentials: true })
         .then((response) => setRepositories(response.data.repositories))
         .catch(() => setRepositories([]));
     }
@@ -34,17 +34,17 @@ export const AuthProvider = ({ children }) => {
     setIssues([]);
 
     // Fetch branches
-    axios.get(`http://localhost:5000/api/branches/${repoName}`, { withCredentials: true })
+    axios.get(`http://localhost:5004/api/branches/${repoName}`, { withCredentials: true })
       .then((response) => setBranches(response.data.branches))
       .catch(() => setBranches([]));
 
     // Fetch pull requests
-    axios.get(`http://localhost:5000/api/pull-requests/${repoName}`, { withCredentials: true })
+    axios.get(`http://localhost:5004/api/pull-requests/${repoName}`, { withCredentials: true })
       .then((response) => setPullRequests(response.data.pullRequests))
       .catch(() => setPullRequests([]));
 
     // Fetch issues
-    axios.get(`http://localhost:5000/api/issues/${repoName}`, { withCredentials: true })
+    axios.get(`http://localhost:5004/api/issues/${repoName}`, { withCredentials: true })
       .then((response) => setIssues(response.data.issues))
       .catch(() => setIssues([]));
   };
